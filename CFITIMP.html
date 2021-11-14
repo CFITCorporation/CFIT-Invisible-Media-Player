@@ -1,0 +1,85 @@
+﻿<!DOCTYPE HTML>
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta charset="utf-8" />
+<title>音乐播放器</title>
+<link rel="icon" type="image/png" href="CFITIMP.ico">
+<link rel="stylesheet" type="text/css" href="css/m-details.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+<style type="text/css">
+.style1 {
+				font-family: 华文仿宋;
+				font-weight: bold;
+				font-size: large;
+				margin-top: 0;
+}
+.style2 {
+				margin-top: 10px;
+				width: 662px;
+				font-size: larger;
+				color: #000080;
+				line-height: 25px;
+				font: menu;
+				font-style: inherit;
+				font-family: 华文中宋;
+				font-weight: bold;
+}
+</style>
+
+</head>
+<body>
+
+<form id="form1" runat="server">
+
+<div class="m-content">
+	<!--播放器-->
+	<div class="m-player">
+		<div class="m-player-details" style="left: 0px; top: 0px">
+			<div class="m-title" style="font-family: 'Lucida Calligraphy'">CFIT 
+							Invisible Media Player</div>
+			<!--效果html开始-->
+			<div id="player" style="left: 0px; top: 0px">
+				<div class="ctrl">
+					<div class="control">
+						<div class="left lefticon">
+							<div class="playback icon"></div>
+							<a href="/CFITInvisibleMediaPlayer" class="img" style="width: 45px" unselectable="on"></a>
+							<input name="C" type="checkbox" style="width: 19px; height: 20px"><label id="Label1"><span class="style1" style="height: 31px; width: 108px">循环播放</span></label></div>
+						<div class="timer">0:00</div>
+						<div class="progress">
+							<div class="slider">
+								<div class="loaded"></div>
+								<div class="pace"></div>
+							</div>
+						</div>
+
+						<div class="volume right">
+							<div class="mute icon left"></div>
+							<div class="slider left">
+							   <div class="pace"></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!--歌曲详细内容-->
+			<div class="style2" id="Names">歌曲名称：<div class="style2" id="Names0"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.17.custom.min.js"></script>
+<script type="text/javascript" src="js/m-details.js"></script>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+</form>
+</body>
+</html>
+<!-- 百度分享js -->
+<!--script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":["qzone","tsina","weixin","tqq"],"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>	
