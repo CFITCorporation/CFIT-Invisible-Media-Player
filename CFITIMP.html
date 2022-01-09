@@ -1,6 +1,16 @@
-﻿<!DOCTYPE HTML>
-<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<!--html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"-->
+<html>
 <head>
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+<script>
+	L2Dwidget.init({ 
+		"model": { "jsonPath":"https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json", "scale": 1, "hHeadPos":0.5, "vHeadPos":0.618 },
+		"display": { "position": "right", "width": 500, "height": 1000, "hOffset": 0, "vOffset": 0 }, 
+		"mobile": { "show": true, "scale": 0.5 },
+		"react": { "opacityDefault": 0.4, "opacityOnHover": 0.2 } 
+		});
+</script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <meta charset="utf-8" />
 <title>音乐播放器</title>
 <link rel="icon" type="image/png" href="CFITIMP.ico">
@@ -26,16 +36,18 @@
 				font-weight: bold;
 }
 </style>
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<form id="form1" runat="server">
+<form id="form1" runat="server" style="width: 1047px; height: 404px;">
 
-<div class="m-content">
+<div class="m-content" style="width: 745px">
 	<!--播放器-->
-	<div class="m-player">
-		<div class="m-player-details" style="left: 0px; top: 0px">
+	<div class="m-player" style="width: 697px">
+		<div class="m-player-details" style="left: 0px; top: 0px; width: 679px;">
 			<div class="m-title" style="font-family: 'Lucida Calligraphy'">CFIT 
 							Invisible Media Player</div>
 			<!--效果html开始-->
@@ -69,17 +81,31 @@
 			</div>
 		</div>
 	</div>
+<p style="width: 706px">&nbsp;</p>
+<p>&nbsp;</p>
+
+<div style="text-align:center;margin:10px 0; font:normal 14px/24px 'MicroSoft YaHei';">
 </div>
+</div>
+<meta name="viewport" content="width=device-width-10, initial-scale=1.2, maximum-scale=1.2, user-scalable=0">
+<script type="text/javascript">
+if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+var version = parseFloat(RegExp.$1);
+if(version>2.3){
+var phoneScale = parseInt(window.screen.width)/480;
+document.write('<meta name="viewport" content="width=480, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+}else{
+document.write('<meta name="viewport" content="width=480, target-densitydpi=device-dpi">');
+}
+}else{
+document.write('<meta name="viewport" content="width=480, user-scalable=no, target-densitydpi=device-dpi">');
+}
+</script>
+
 <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui-1.8.17.custom.min.js"></script>
 <script type="text/javascript" src="js/m-details.js"></script>
 
-<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-</div>
 </form>
 </body>
 </html>
-<!-- 百度分享js -->
-<!--script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":["qzone","tsina","weixin","tqq"],"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>	
