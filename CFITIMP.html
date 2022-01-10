@@ -1,13 +1,15 @@
 <!--html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"-->
+<!doctype html>
 <html>
 <head>
 <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+<meta name="viewport" content="width=device-width-10, initial-scale=1.2, maximum-scale=1.2, user-scalable=0">
 <script>
 	L2Dwidget.init({ 
 		"model": { "jsonPath":"https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json", "scale": 1, "hHeadPos":0.5, "vHeadPos":0.618 },
-		"display": { "position": "right", "width": 500, "height": 1000, "hOffset": 0, "vOffset": 0 }, 
+		"display": { "position": "right", "width": 350, "height": 700, "hOffset": -50, "vOffset": -200 }, 
 		"mobile": { "show": true, "scale": 0.5 },
-		"react": { "opacityDefault": 0.6, "opacityOnHover": 0.2 } 
+		"react": { "opacityDefault": 0.4, "opacityOnHover": 0.2 } 
 		});
 </script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -42,7 +44,7 @@
 </head>
 <body>
 
-<form id="form1" runat="server" style="width: 1047px; height: 404px;">
+<form id="form1" runat="server" style="width: 782px; height: 404px;">
 
 <div class="m-content" style="width: 745px">
 	<!--播放器-->
@@ -87,18 +89,17 @@
 <div style="text-align:center;margin:10px 0; font:normal 14px/24px 'MicroSoft YaHei';">
 </div>
 </div>
-<meta name="viewport" content="width=device-width-10, initial-scale=1.2, maximum-scale=1.2, user-scalable=0">
 <script type="text/javascript">
 if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
 var version = parseFloat(RegExp.$1);
 if(version>2.3){
-var phoneScale = parseInt(window.screen.width)/480;
-document.write('<meta name="viewport" content="width=480, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+var phoneScale = parseInt(window.screen.width)/640;
+document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
 }else{
-document.write('<meta name="viewport" content="width=480, target-densitydpi=device-dpi">');
+document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
 }
 }else{
-document.write('<meta name="viewport" content="width=480, user-scalable=no, target-densitydpi=device-dpi">');
+document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
 }
 </script>
 
