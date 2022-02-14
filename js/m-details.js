@@ -13939,7 +13939,7 @@ list2=['Because of You',
 
 //var tot = function () 
 	var musicIndex = parseInt(Math.random() * 6947)
-      var currentSong = 'http://music.163.com/song/media/outer/url?id='+list[musicIndex]
+      var currentSong = 'https://music.163.com/song/media/outer/url?id='+list[musicIndex]
       
 		playlist = [
 		{
